@@ -15,6 +15,9 @@ d3.json(url).then(function(quakeData) {
 
 // Created dots with size increases, which affect color, based on depth and magnitude 
 
+   // Used lecture videos and notes for module 15. And ask BCS
+
+
 function createMarker(feature, latlon) {
     return L.circleMarker(latlon, {
         fillColor: makeColor(feature.geometry.coordinates[2]),
